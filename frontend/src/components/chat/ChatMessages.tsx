@@ -6,6 +6,7 @@ import {
   isToolMessage,
   isToolResultMessage,
   isPlanMessage,
+  isThinkingMessage,
 } from "../../types";
 import {
   ChatMessageComponent,
@@ -13,6 +14,7 @@ import {
   ToolMessageComponent,
   ToolResultMessageComponent,
   PlanMessageComponent,
+  ThinkingMessageComponent,
   LoadingComponent,
 } from "../MessageComponents";
 // import { UI_CONSTANTS } from "../../utils/constants"; // Unused for now
@@ -63,6 +65,8 @@ export function ChatMessages({ messages, isLoading, workingDirectory }: ChatMess
       return <ToolResultMessageComponent key={key} message={message} />;
     } else if (isPlanMessage(message)) {
       return <PlanMessageComponent key={key} message={message} />;
+    } else if (isThinkingMessage(message)) {
+      return <ThinkingMessageComponent key={key} message={message} />;
     } else if (isChatMessage(message)) {
       return <ChatMessageComponent key={key} message={message} />;
     }
