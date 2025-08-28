@@ -1,16 +1,57 @@
-MIT License
+Claude Code Mobile Web UI - Dual License
 
-Copyright (c) 2025 Claude Code Web UI
+Copyright (c) 2025 Khoa Bui <khoaofgod@gmail.com>
+Derived from Claude Code Web UI by sugyan (https://github.com/sugyan/claude-code-webui)
+
+This software is licensed under a dual licensing model:
+
+===============================================================================
+CONTRIBUTION LICENSE (for Pull Requests and Contributions)
+===============================================================================
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of this software and associated documentation files (the "Software"), to 
+contribute to this repository through pull requests, bug reports, and other
+collaborative development activities, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Contributions must be submitted to the original repository at:
+   https://github.com/khoaofgod/claude-code-mobile-webui
+
+2. Contributors retain copyright to their contributions but grant the project
+   maintainer perpetual, irrevocable rights to use, modify, and distribute
+   their contributions as part of this project.
+
+3. This contribution license does not grant any rights to fork, distribute,
+   or create derivative works outside of contributions to the main repository.
+
+===============================================================================
+COMMERCIAL RESTRICTION LICENSE (for Usage and Distribution)
+===============================================================================
+
+COMMERCIAL USE RESTRICTIONS:
+
+1. PROHIBITED ACTIVITIES:
+   - Creating independent forks for commercial distribution
+   - Selling this software or derivative works based on this software
+   - Using this software as the basis for competing commercial products
+   - Redistributing this software for commercial purposes
+   - Offering hosting services based on this software without explicit permission
+
+2. PERMITTED ACTIVITIES:
+   - Internal use within organizations (non-commercial and commercial)
+   - Educational and research purposes
+   - Personal use and experimentation
+   - Contributing improvements back to the main repository
+   - Academic and non-profit use
+
+3. COMMERCIAL LICENSING:
+   Commercial entities wishing to use this software for prohibited activities
+   must obtain a separate commercial license from the copyright holder.
+   Contact: khoaofgod@gmail.com
+
+===============================================================================
+GENERAL TERMS
+===============================================================================
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,3 +60,26 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+===============================================================================
+ORIGINAL LICENSE ATTRIBUTION
+===============================================================================
+
+This project is derived from Claude Code Web UI by sugyan, originally licensed
+under the MIT License. The original work can be found at:
+https://github.com/sugyan/claude-code-webui
+
+Original MIT License applies to the base work. Modifications and enhancements
+are subject to the terms above.
+
+===============================================================================
+LICENSE ENFORCEMENT
+===============================================================================
+
+Violations of this license will result in:
+1. Immediate termination of usage rights
+2. Legal action for damages and injunctive relief
+3. DMCA takedown requests for unauthorized distributions
+
+For questions about licensing terms or to request commercial licensing,
+contact: khoaofgod@gmail.com

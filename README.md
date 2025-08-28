@@ -4,7 +4,7 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)](https://hono.dev/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: Dual](https://img.shields.io/badge/License-Dual%20Licensed-blue.svg?style=for-the-badge)](LICENSE)
 
 > **🌟 The most advanced web interface for Claude Code CLI with enterprise-grade security, multi-user authentication, and cross-platform support**
 
@@ -513,16 +513,24 @@ git push origin feature/amazing-feature
 
 ## 📄 **License**
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under a **Dual License Model** - see the [LICENSE](LICENSE) file for complete terms.
+
+### 🔒 **Commercial Protection License**
+- **Prohibits**: Independent commercial forks, selling derivative works, competing products
+- **Allows**: Internal use, education, research, personal use, contributions to main repository
+- **Commercial Use**: Requires separate commercial license (contact: khoaofgod@gmail.com)
+
+### 🤝 **Contribution License** 
+- **Contributions Welcome**: Bug reports, pull requests, feature suggestions
+- **Repository**: Must be submitted to https://github.com/khoaofgod/claude-code-mobile-webui
+- **Rights**: Contributors retain copyright, grant perpetual usage rights to project
 
 ```
-MIT License
+Copyright (c) 2025 Khoa Bui <khoaofgod@gmail.com>
+Derived from Claude Code Web UI by sugyan
 
-Copyright (c) 2024 Claude Code Web UI Contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
+This software uses a dual licensing model that protects commercial interests
+while encouraging community contributions. See LICENSE file for full terms.
 ```
 
 ---
