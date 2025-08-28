@@ -48,6 +48,44 @@ body {
   @apply min-h-screen bg-gradient-to-br from-base-100 via-base-200 to-base-300;
 }
 
+/* PWA Install Animations */
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-100%) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+.animate-slide-in-top {
+  animation: slide-in-top 0.3s ease-out forwards;
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  }
+  50% { 
+    box-shadow: 0 0 0 8px rgba(99, 102, 241, 0);
+  }
+}
+
 .ultra-chat-header {
   @apply bg-base-100/90 backdrop-blur-sm border-b border-base-300 shadow-sm;
 }

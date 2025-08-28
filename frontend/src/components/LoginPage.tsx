@@ -10,14 +10,19 @@ import {
   ShieldCheckIcon as Shield, 
   SparklesIcon as Sparkles 
 } from '@heroicons/react/24/outline';
+import PWAInstallBanner from './PWAInstallBanner';
+import PWAInstallPrompt from './PWAInstallPrompt';
+import { usePWA } from '../hooks/usePWA';
 
 export function LoginPage() {
   const { user, login, isLoading } = useAuth();
+  const { canInstall } = usePWA();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPWAPrompt, setShowPWAPrompt] = useState(false);
 
   // Redirect if already logged in
   if (user) {
@@ -176,7 +181,7 @@ export function LoginPage() {
           </form>
 
           {/* Footer */}
-          <div className="text-center text-xs text-base-content/50 space-y-2">
+          <div className="text-center text-xs text-base-content/50 space-y-3">
             <p>Secure shell user authentication</p>
             <div className="flex items-center justify-center gap-4 text-base-content/30">
               <span>Multi-user support</span>
@@ -185,6 +190,19 @@ export function LoginPage() {
               <span>•</span>
               <span>Ultra secure</span>
             </div>
+            
+            {/* PWA Install Button */}
+            {canInstall && (
+              <button
+                onClick={() => setShowPWAPrompt(true)}
+                className="text-primary hover:text-primary-focus transition-colors duration-300 font-medium flex items-center justify-center gap-1.5 mx-auto animate-bounce-gentle"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+                <span>Install App</span>
+              </button>
+            )}
           </div>
         </div>
 
@@ -192,7 +210,20 @@ export function LoginPage() {
         <div className="mt-4 text-center text-xs text-base-content/40">
           <p>Your credentials are verified against system users</p>
         </div>
+
+        {/* PWA Installation Prompt */}
+        {showPWAPrompt && (
+          <div className="mt-6">
+            <PWAInstallPrompt 
+              onDismiss={() => setShowPWAPrompt(false)}
+              className="w-full"
+            />
+          </div>
+        )}
       </div>
+
+      {/* PWA Install Banner (appears automatically) */}
+      <PWAInstallBanner />
 
       {/* Floating animation styles */}
       <style>{`
